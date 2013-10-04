@@ -31,6 +31,13 @@ public class Config
 	private ConfigHelper helper;
 
 	/** */
+	public Config()
+	{
+		this.properties = new Properties();
+		this.helper = new ConfigHelper();
+	}
+	
+	/** */
 	public Config(Properties properties)
 	{
 		this.properties = properties;
